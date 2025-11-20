@@ -1,11 +1,6 @@
 [build]
-  # Указываем папку, где лежат функции
-  functions = "netlify-proxy/functions"
+  functions = "functions"
   publish = "."
-
-[functions]
-  # Альтернативная секция, если хочешь явно указать директорию функций
-  directory = "netlify‑proxy/functions"
 
 [[redirects]]
   from = "/sub.txt"
