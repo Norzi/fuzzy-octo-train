@@ -1,3 +1,9 @@
 [build]
-  functions = "functions"
+  functions = "netlify-proxy/functions"
   publish = "."
+
+[[redirects]]
+  from = "/sub.txt"
+  to = "/.netlify/functions/sub"
+  status = 200
+  force = true
